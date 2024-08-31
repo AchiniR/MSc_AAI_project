@@ -1,0 +1,27 @@
+Logging output to ./logs/DADA2KS_Full_SACAE_Final/test_DADA2KS_Full_SACAE_Final_2024-07-26_23-19.log
+# test set: 82
+=> loaded checkpoint './output/DADA2KS_Full_SACAE_Final/checkpoints/sac_epoch_50.pt'
+Testing video 1/16, file: 1/1.avi, frame #: 10 (fps=6.00).
+Testing video 2/16, file: 10/33.avi, frame #: 10 (fps=6.00).
+Testing video 3/16, file: 11/31.avi, frame #: 10 (fps=6.00).
+Testing video 4/16, file: 12/40.avi, frame #: 10 (fps=6.00).
+Testing video 5/16, file: 13/45.avi, frame #: 10 (fps=6.00).
+Testing video 6/16, file: 13/50.avi, frame #: 10 (fps=6.00).
+Testing video 7/16, file: 15/56.avi, frame #: 10 (fps=6.00).
+Testing video 8/16, file: 16/52.avi, frame #: 10 (fps=6.00).
+Testing video 9/16, file: 17/64.avi, frame #: 10 (fps=6.00).
+Testing video 10/16, file: 18/69.avi, frame #: 10 (fps=6.00).
+Testing video 11/16, file: 19/74.avi, frame #: 10 (fps=6.00).
+Testing video 12/16, file: 2/7.avi, frame #: 10 (fps=6.00).
+Testing video 13/16, file: 20/81.avi, frame #: 10 (fps=6.00).
+Testing video 14/16, file: 5/11.avi, frame #: 10 (fps=6.00).
+Testing video 15/16, file: 6/16.avi, frame #: 10 (fps=6.00).
+Testing video 16/16, file: 7/21.avi, frame #: 10 (fps=6.00).
+
+[Earliness] mTTA@0.5 = 1.0545 seconds.
+[Correctness] AP = 0.3147, precision@0.5 = 0.3333, recall@0.5 = 0.7946
+AUC_video=0.4151785714285714
+[Correctness] v-AUC = 0.41518, f-AUC = 0.49531
+[Attentiveness] Fixation MSE = 408.1636
+
+Done!

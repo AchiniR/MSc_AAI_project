@@ -1,0 +1,34 @@
+Logging output to ./logs/DADA2KS_Full_SACAE_Final/train_DADA2KS_Full_SACAE_Final_2024-07-27_00-49.log
+# train set: 1726, eval set: 754
+Epoch: 1 / 50:   0%|          | 0/345 [00:00<?, ?it/s]Epoch: 1 / 50:   0%|          | 1/345 [07:18<41:53:59, 438.49s/it]Epoch: 1 / 50:   1%|          | 2/345 [14:35<41:44:55, 438.18s/it]Epoch: 1 / 50:   1%|          | 2/345 [16:01<45:48:48, 480.84s/it]
+Traceback (most recent call last):
+  File "main_sac.py", line 346, in <module>
+    train()
+  File "main_sac.py", line 213, in train
+    updates = train_per_epoch(traindata_loader, env, agent, cfg, writer, e, memory, updates)
+  File "main_sac.py", line 129, in train_per_epoch
+    outputs = agent.update_parameters(memory, updates)
+  File "/home/achini/Documents/DRIVE-master/RLlib/SAC/sac.py", line 261, in update_parameters
+    self.update_critic(state_batch, action_batch, reward_batch, next_state_batch, mask_batch, rnn_state_batch)
+  File "/home/achini/Documents/DRIVE-master/RLlib/SAC/sac.py", line 138, in update_critic
+    next_acc_state_action, _, next_acc_state_log_pi, _ = self.policy_accident.sample(next_acc_state, rnn_state_batch)
+  File "/home/achini/Documents/DRIVE-master/RLlib/SAC/agents.py", line 177, in sample
+    mean, log_std, rnn_state = self.forward(state, rnn_state, detach=detach)
+  File "/home/achini/Documents/DRIVE-master/RLlib/SAC/agents.py", line 157, in forward
+    x = self.state_encoder(state, detach=detach)
+  File "/home/achini/miniconda3/envs/pyRL/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/achini/Documents/DRIVE-master/RLlib/SAC/agents.py", line 52, in forward
+    h = self.encoder(state)
+  File "/home/achini/miniconda3/envs/pyRL/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/achini/miniconda3/envs/pyRL/lib/python3.7/site-packages/torch/nn/modules/container.py", line 100, in forward
+    input = module(input)
+  File "/home/achini/miniconda3/envs/pyRL/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/achini/miniconda3/envs/pyRL/lib/python3.7/site-packages/torch/nn/modules/linear.py", line 87, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/achini/miniconda3/envs/pyRL/lib/python3.7/site-packages/torch/nn/functional.py", line 1370, in linear
+    ret = torch.addmm(bias, input, weight.t())
+RuntimeError: size mismatch, m1: [64 x 640], m2: [128 x 64] at /pytorch/aten/src/TH/generic/THTensorMath.cpp:136
+Done!

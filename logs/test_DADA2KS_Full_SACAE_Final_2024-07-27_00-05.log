@@ -1,0 +1,8 @@
+Logging output to ./logs/DADA2KS_Full_SACAE_Final/test_DADA2KS_Full_SACAE_Final_2024-07-27_00-05.log
+
+[Earliness] mTTA@0.5 = 1.0545 seconds.
+[Correctness] AP = 0.3147, precision@0.5 = 0.3333, recall@0.5 = 0.7946
+[Correctness] v-AUC = 0.41518, f-AUC = 0.49531
+[Attentiveness] Fixation MSE = 408.1636
+
+Done!
